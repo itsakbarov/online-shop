@@ -50,7 +50,7 @@
     margin-right: 15px;
 }
 
-.site_header .header_top .dropdown_content .lang{
+.site_header .header_top .dropdown_content .lang {
     padding: 0 10px;
 }
 
@@ -73,7 +73,7 @@
     transform: rotateX(0deg);
 }
 
-.site_header .container  a {
+.site_header .container a {
     text-decoration: none;
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.4s all;
     color: #272727;
@@ -81,14 +81,15 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-.site_header .container  a:hover {
+.site_header .container a:hover {
     color: rgb(46, 95, 255);
 }
 
-.site_header .container .header_top .header_top_left  {
+.site_header .container .header_top .header_top_left {
     display: flex;
     align-items: center;
 }
+
 .site_header .container .header_top .header_top_right a {
     padding: 8px 15px;
     margin-right: 5px;
@@ -122,4 +123,33 @@
 .site_header .container .header_bottom {
     display: flex;
     justify-content: space-between;
+}
+
+.location_wrapper {
+    display: inline-block;
+    position: relative;
+}
+.location_wrapper .rotater:hover .locations {
+    transform: rotate(0);
+    opacity: 1;
+
+}
+.location_marker~.locations {
+    position: absolute;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+    opacity: 0;
+    background: white;
+    border: 1px solid;
+    filter: drop-shadow(0px 0px 6px rgba(0,0,0,0.4));
+    top: 25px;
+    transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+    right: -35px;
+}
+
+.locations a{
+    text-decoration: none;
+    padding: 5px 15px;
+    display: block;
+
 }
