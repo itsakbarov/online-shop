@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="./assets/libraries/Hover-master/css/hover-min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/libraries/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/libraries/Hover-master/css/hover-min.css">
   <link rel="stylesheet" href="./assets/css/app.css">
 </head>
 
@@ -17,8 +19,9 @@
       <div class="header_top">
         <div class="header_top_left">
           <div class="dropdown_content">
-            <a href="#!" class="lang">O'zbekcha
-              <i class="fa fa-caret-down"></i>
+            <a class="button lang  hvr-icon-sink-away" href="#!">
+              O'zbekcha
+              <i class="fa fa-caret-down hvr-icon"></i>
             </a>
             <div class="dropdown_menu">
               <a href="#!" class="lang">Русский</a>
@@ -33,20 +36,138 @@
               </a>
 
               <div class="locations">
-                <a href="#!">Farg'ona</a>
-                <a href="#!">Andijon</a>
-                <a href="#!">Namangan</a>
-                <a href="#!">Tashkent</a>
-                <a href="#!">Buxoro</a>
-                <a href="#!">Navoiy</a>
-                <a href="#!">Samarqand</a>
-                <a href="#!">Qoraqalpog'iston</a>
+
+                <ul class="main_menu">
+                  <li class="location_list">
+                    <a href="#" class="locaiton_name">Butun O'zbekistion</a>
+                  </li>
+
+                  <li class="location_list">
+                    <a href="#" class="locaiton_name">Farg'ona viloyati</a>
+                    <ul class="sub_menu">
+                      <li>
+                        <a href="#">Oltiariq</a>
+                      </li>
+                      <li>
+                        <a href="#">Qoqon</a>
+                      </li>
+                      <li>
+                        <a href="#">Rishton</a>
+                      </li>
+                      <li>
+                        <a href="#">Oltiariq</a>
+                      </li>
+                      <li>
+                        <a href="#">Qoqon</a>
+                      </li>
+                      <li>
+                        <a href="#">Rishton</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="location_list">
+                    <a href="#" class="locaiton_name">Andijon viloyati</a>
+                    <ul class="sub_menu">
+                      <li>
+                        <a href="#">Asaka shaxri</a>
+                      </li>
+                      <li>
+                        <a href="#">Baliqchi</a>
+                      </li>
+                      <li>
+                        <a href="#">Bo'x</a>
+                      </li>
+                      <li>
+                        <a href="#">Shaxrixon</a>
+                      </li>
+                      <li>
+                        <a href="#">Buloqboshi</a>
+                      </li>
+                      <li>
+                        <a href="#">Eski shaxar</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="location_list">
+                    <a href="#" class="locaiton_name">Namangan viloyati</a>
+                    <ul class="sub_menu">
+                      <li>
+                        <a href="#">Pop </a>
+                      </li>
+                      <li>
+                        <a href="#">Kosonsoy</a>
+                      </li>
+                      <li>
+                        <a href="#">Navbahor</a>
+                      </li>
+                      <li>
+                        <a href="#">Pop </a>
+                      </li>
+                      <li>
+                        <a href="#">Kosonsoy</a>
+                      </li>
+                      <li>
+                        <a href="#">Navbahor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="location_list">
+                    <a href="#" class="locaiton_name">Toshkent viloyati</a>
+                    <ul class="sub_menu">
+                      <li>
+                        <a href="#">Angren </a>
+                      </li>
+                      <li>
+                        <a href="#">Bostonliq</a>
+                      </li>
+                      <li>
+                        <a href="#">Ohangaron</a>
+                      </li>
+                      <li>
+                        <a href="#">Chirchiq</a>
+                      </li>
+                      <li>
+                        <a href="#">Qibray</a>
+                      </li>
+                      <li>
+                        <a href="#">O'rta Chirchiq</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                     <li class="location_list">
+                    <a href="#" class="locaiton_name">Samarqand viloyati</a>
+                    <ul class="sub_menu">
+                      <li>
+                        <a href="#">Kattaqo'rg'on </a>
+                      </li>
+                      <li>
+                        <a href="#">Paxtachi</a>
+                      </li>
+                      <li>
+                        <a href="#">Navbahor</a>
+                      </li>
+                      <li>
+                        <a href="#">Urgut</a>
+                      </li>
+                      <li>
+                        <a href="#">Toyloq</a>
+                      </li>
+                      <li>
+                        <a href="#">Urqut</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+
               </div>
+
             </div>
           </div>
         </div>
         <div class="header_top_right">
-          <a href="#!">Premium</a>
+          <a class="button hvr-underline-from-center" href="#!">Premium</a>
           <a href="#!">Muddatli to'lov</a>
           <a href="#!">Yordam</a>
           <a href="#!">Chegirmalar</a>
@@ -55,7 +176,15 @@
       <div class="header_bottom">
         <div class="header_bottom_left">
           <a class="site_logo" href="http://" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/icons/sirte_logo.png" alt="Site logo"></a>
+            <img src="./assets/icons/sirte_logo.png" alt="Site logo"></a>
+          <div class="input_holder">
+            <form action="" method="get">
+              <input type="search" class="search_input" placeholder="Maxsulot qidirish">
+              <button type="submit" class="search_btn hvr-icon- hvr-bounce-to-right button">
+                <i class="fa fa-search hvr-icon"></i>
+              </button>
+            </form>
+          </div>
         </div>
         <div class="header_bottom_right">
           <a href="#">Kirish</a>
@@ -68,6 +197,74 @@
       </div>
     </div>
   </header>
+  <div class="section_hero container">
+    <div class="owl-carousel">
+      <div class="item">
+        <div class="item_left">
+          <img
+            src="https://olcha.uz/image/420x220/sliders/ru/gKrUd4uafWkxMNnddgZMWxBb2a2gRsYQgtgTEMoWiMPx0cXEFXmB4SDrSexo.png"
+            alt="">
+        </div>
+        <div class="item_right">
+          <h2 class="item_name">
+            Thermaltek
+          </h2>
+          <p class="item_descr">
+            Kompyuter korpuslari, sovutish tizimlari, quvvatlash bloklari va boshqalar
+          </p>
+          <a href="#" class="item_link">Sotib olish</a>
+        </div>
+      </div>
+
+      <div class="item second">
+        <div class="item_left">
+          <img
+            src="https://olcha.uz/image/420x220/sliders/ru/XV2nOMTKCgyZjiV5TmhKLn0F0EQrPgbYoLUSZHN0GrSq50dlLbunV83ox1Ls.png"
+            alt="">
+        </div>
+        <div class="item_right">
+          <h2 class="item_name">
+            Smartfonlar
+          </h2>
+          <p class="item_descr">
+            468 000 so'mdan boshlab
+          </p>
+          <a href="#" class="item_link">Sotib olish</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item_left">
+          <img
+            src="https://olcha.uz/image/420x220/sliders/ru/gKrUd4uafWkxMNnddgZMWxBb2a2gRsYQgtgTEMoWiMPx0cXEFXmB4SDrSexo.png"
+            alt="">
+        </div>
+        <div class="item_right">
+          <h2 class="item_name">
+            Thermaltek
+          </h2>
+          <p class="item_descr">
+            Kompyuter korpuslari, sovutish tizimlari, quvvatlash bloklari va boshqalar
+          </p>
+          <a href="#" class="item_link">Sotib olish</a>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <h2 class="banner_title">Zalman</h2>
+      <p class="banner_subtitle">komputer jihozlari</p>
+      <img class="banner_image" src="https://olcha.uz/uploads/right_advertise_oz/KK/KK/KE/1599894362.png" alt="">
+      <div class="banner_link_holder">
+        <a href="#" class="banner_link">Batafsil</a>
+
+      </div>
+
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./assets/libraries/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
