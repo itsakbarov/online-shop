@@ -18,6 +18,14 @@ $('.owl-carousel').owlCarousel({
 });
     $('.categories-btn__title').click(function(){
         console.log('document is working!!!! ');
-        $('body').toggleClass('dark'); 
-       $('.categories-menu').toggleClass('opened');
+        $('.overlay').toggle(); 
+       $('.categories-menu').css('display', 'flex');
+    });
+    
+    $('.overlay').click(function(){
+        $('.overlay').hide(); 
+       $('.categories-menu').hide();
+    });
+    $('.dropdown_content').hover(function(){
+        $('.dropdown_menu').css('transform','rotateX(0)')
     })

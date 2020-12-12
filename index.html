@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./assets/libraries/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./assets/libraries/Hover-master/css/hover-min.css">
-  <link rel="stylesheet" href="./assets/css/app.css">
+  <link rel="stylesheet" href="./assets/stylesheet/min.css/app.min.css">
 </head>
 
 
 <body>
+  <div class="overlay"></div>
   <header class="site_header">
     <div class="container">
       <div class="header_top">
@@ -23,8 +24,12 @@
             <a class="lang lang--active" href="#!">
               O'zbekcha
             </a>
-            <a href="#!" class="lang">Русский</a>
-            <a href="#!" class="lang">English</a>
+            <a href="#!" class="lang mb">Русский</a>
+            <a href="#!" class="lang mb">English</a>
+            <div class="dropdown_menu">
+              <a href="#!" class="lang">Русский</a>
+              <a href="#!" class="lang">English</a>
+            </div>
           </div>
           <div class="location_wrapper">
             <p class="location_name">Joylashuvingiz: </p>
@@ -165,10 +170,19 @@
           </div>
         </div>
         <div class="header_top_right">
-          <a class="button hvr-underline-from-center" href="#!">Premium</a>
+          <a class="button" href="#!">Premium</a>
           <a href="#!">Muddatli to'lov</a>
           <a href="#!">Yordam</a>
           <a href="#!">Chegirmalar</a>
+        </div>
+        <div class="mobile-icon">
+          <a href="#">
+            <span class="icon"><img src="./assets/icons/user.svg" alt=""></span>
+          </a>
+          <a href="#!">
+            <span class="icon"><img src="./assets/icons/like.svg" alt=""></span>
+          </a>
+
         </div>
       </div>
       <div class="header_bottom">
@@ -179,11 +193,12 @@
             <div class=" categories-wrapper">
               <a href="javascript:void(0)" class="categories-btn">
                 <span class="categories-btn__title">Kategoriyalar
-                <i class="fa fa-bars categories-btn__bar" ></i>
+                  <i class="fa fa-bars categories-btn__bar"></i>
                 </span>
-                
+
                 <div class="categories-menu">
                   <div class="aside">
+
                     <ul class="aside--menu">
                       <li><a class="aside--menu_link" href="#">Samsung</a></li>
                       <li><a class="aside--menu_link" href="#">Apple</a></li>
@@ -194,6 +209,8 @@
                     </ul>
                   </div>
                   <div class="side-list">
+                    <a href="#" class="close-btn">&times;</a>
+
                     <ul class="side-list__menu">
                       <li><a class="side-list__link" href="#">Brand logo and name</a></li>
                       <li><a class="side-list__link" href="#">Brand logo and name</a></li>
@@ -215,8 +232,14 @@
           </div>
         </div>
         <div class="header_bottom_right">
-          <a href="#">Kirish</a>
-          <a href="#!">Tanlanganlar</a>
+          <a class="mb-none" href="#">
+            <span class="icon"><img src="./assets/icons/user.svg" alt=""></span>
+            <span class="text">Kirish</span>
+          </a>
+          <a class="mb-none" href="#!">
+            <span class="icon"><img src="./assets/icons/like.svg" alt=""></span>
+            <span class="text">Tanlanganlar</span>
+          </a>
           <a class="button hvr-bounce-to-right hvr-icon-pulse-shrink" href="#!">
             <i class="fa fa-plus hvr-icon"></i>
             E'lon qo'shish
