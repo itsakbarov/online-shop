@@ -603,7 +603,8 @@ a {
 .section_hero .owl-carousel {
   height: 30vh;
   background-repeat: no-repeat;
-  width: 75%;
+  width: 70%;
+  min-height: 300px;
   background-size: contain;
 }
 
@@ -665,6 +666,10 @@ a {
   }
 }
 
+.section_hero .fade {
+  width: 325px;
+}
+
 .section_hero .banner {
   width: 23%;
   background: #2a306c;
@@ -673,6 +678,8 @@ a {
   -webkit-transition: .5s;
   transition: .5s;
   padding: 25px 10px;
+  height: 300px;
+  min-height: 300px;
   color: white;
   text-align: center;
 }
@@ -719,7 +726,7 @@ a {
   padding: 5px 10px;
 }
 
-.owl-nav {
+.section_hero .owl-nav {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -732,7 +739,7 @@ a {
           justify-content: space-between;
 }
 
-.owl-nav button span {
+.section_hero .owl-nav button span {
   width: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,4 +757,81 @@ a {
   border-radius: 50%;
   border: none;
   background: #cfc1c1;
+}
+
+.mobile-header {
+  display: none;
+  padding: 0 15px;
+}
+
+.mobile-header .mobile-input_holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-header .categories-btn__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-header .search_input {
+  border: 1px solid #2AB6D9;
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.mobile-header .search_input:focus {
+  -webkit-box-shadow: 0px 0px 6px rgba(33, 109, 250, 0.452);
+          box-shadow: 0px 0px 6px rgba(33, 109, 250, 0.452);
+}
+
+.mobile-header form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 66%;
+}
+
+.mobile-header .search_btn {
+  padding: 10px 15px;
+  outline: none;
+  border: 1px solid #2AB6D9;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-header {
+    display: block;
+  }
+}
+
+.slick-next::before,
+.slick-prev::before {
+  color: blue;
+}
+
+.newbies {
+  padding: 60px 0 0 0;
+}
+
+.newbies .newbies__title {
+  color: #212529;
+  font-size: 1.75rem;
+  line-height: 3;
+}
+
+.newbies .carousel .item .item__top .item__img {
+  width: 194px;
+  height: 200px;
 }
