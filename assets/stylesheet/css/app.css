@@ -705,7 +705,10 @@ a {
 .section_hero .banner .banner_image {
   display: block;
   margin: auto;
-  width: 80%;
+  width: 110px;
+  height: 143px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section_hero .banner .banner_link_holder {
@@ -822,6 +825,10 @@ a {
 }
 
 .newbies {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   padding: 60px 0 0 0;
 }
 
@@ -831,7 +838,42 @@ a {
   line-height: 3;
 }
 
+.newbies .carousel .item {
+  -webkit-transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s;
+  transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s;
+  background: white;
+}
+
 .newbies .carousel .item .item__top .item__img {
   width: 194px;
   height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.newbies .carousel .item .item__bottom {
+  padding: 18px 22px;
+}
+
+.newbies .carousel .item .item__bottom .tag {
+  color: #696565;
+  text-decoration: underline;
+  margin-bottom: 22px;
+  display: block;
+  font-weight: 100;
+}
+
+.newbies .carousel .item .item__bottom .item__name {
+  color: #212529;
+  font-weight: 400;
+  font-size: 14px;
+  min-height: 66px;
+  display: block;
+}
+
+.newbies .carousel .item:hover {
+  -webkit-box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }

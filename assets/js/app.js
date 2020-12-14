@@ -2,7 +2,7 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     autoplay: true,
-    nav: true,
+    nav: false,
     responsive: {
         0: {
             items: 1
@@ -59,7 +59,7 @@ $(document).ready(function () {
         infinite: true,
         speed: 500,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 2000,
         arrows: false,
         fade: true,
         cssEase: 'linear'
