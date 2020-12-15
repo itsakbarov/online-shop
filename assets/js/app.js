@@ -71,13 +71,13 @@ $(document).ready(function () {
 
 $('.categories-btn__title').click(function () {
     console.log('document is working!!!! ');
-    $('.overlay').toggle();
-    $('.categories-menu').css('display', 'flex');
+    $('.overlay').css('height','100vh');
+    $('.categories-menu').css('height', '450px');
 });
 
 $('.overlay').click(function () {
-    $('.overlay').hide();
-    $('.categories-menu').hide();
+    $('.overlay').css('height','0');
+    $('.categories-menu').css('height', '0');
 });
 $('.dropdown_content').hover(function () {
     $('.dropdown_menu').css('transform', 'rotateX(0)')
@@ -85,6 +85,6 @@ $('.dropdown_content').hover(function () {
 
 $('.close-btn').click(function (e) {
     e.preventDefault;
-    $('.overlay').hide();
+    $('.overlay').css('height','0');
     $('.categories-menu').hide();
 });
