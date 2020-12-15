@@ -98,18 +98,25 @@ a {
             .location_wrapper {
                 display: flex;
                 align-items: center;
-                .location_marker{
-                    @media screen and (max-width: 525px) {  
+
+                .location_marker {
+                    @media screen and (max-width: 525px) {
                         font-size: 14px;
-                        img{
+
+                        img {
                             width: 15px;
                         }
                     }
                 }
+
                 .location_name {
                     color: rgba(0, 0, 0, 0.5);
                     transition: 0.5s all ease;
                     margin-right: 5px;
+
+                    @media screen and (max-width: 525px) {
+                        display: none;
+                    }
 
                     &:hover {
                         color: rgba(0, 0, 0, 0.9);
@@ -223,8 +230,8 @@ a {
 .overlay {
     position: fixed;
     top: 0;
-        transition: 0.1s cubic-bezier(0.165, 0.84, 0.44, 1) all;
-        right: 0;
+    transition: 0.1s cubic-bezier(0.165, 0.84, 0.44, 1) all;
+    right: 0;
     left: 0;
     margin: auto;
     z-index: 3;
@@ -290,12 +297,13 @@ a {
             display: flex;
             align-items: center;
             margin-right: 5px;
-         @media screen and (max-width: 525px) {
+
+            @media screen and (max-width: 525px) {
                 .name {
                     display: none;
 
                 }
-         }
+            }
         }
 
         .categories-btn__bar {
@@ -577,7 +585,8 @@ a {
                 border-radius: 5px;
                 color: #212529;
                 transition: all cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s;
-                &:hover{
+
+                &:hover {
                     background: rgb(32, 31, 31);
                     color: white;
                 }

@@ -133,6 +133,12 @@ a {
   margin-right: 5px;
 }
 
+@media screen and (max-width: 525px) {
+  .site_header .container .header_top .location_wrapper .location_name {
+    display: none;
+  }
+}
+
 .site_header .container .header_top .location_wrapper .location_name:hover {
   color: rgba(0, 0, 0, 0.9);
 }
