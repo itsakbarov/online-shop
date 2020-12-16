@@ -332,7 +332,7 @@ a {
   background: white;
 }
 
-.categories-wrapper .categories-btn .categories-btn__title {
+.categories-wrapper .categories-btn .categories-btn__title .name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

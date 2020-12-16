@@ -294,14 +294,15 @@ a {
 
     .categories-btn {
         .categories-btn__title {
-            display: flex;
-            align-items: center;
-            margin-right: 5px;
+            .name {
 
-            @media screen and (max-width: 525px) {
-                .name {
+                display: flex;
+                align-items: center;
+                margin-right: 5px;
+
+                @media screen and (max-width: 525px) {
+
                     display: none;
-
                 }
             }
         }

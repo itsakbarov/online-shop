@@ -71,12 +71,12 @@ $(document).ready(function () {
 
 $('.categories-btn__title').click(function () {
     console.log('document is working!!!! ');
-    $('.overlay').css('height','100vh');
+    $('.overlay').css('height', '100vh');
     $('.categories-menu').css('height', '450px');
 });
 
 $('.overlay').click(function () {
-    $('.overlay').css('height','0');
+    $('.overlay').css('height', '0');
     $('.categories-menu').css('height', '0');
 });
 $('.dropdown_content').hover(function () {
@@ -85,6 +85,6 @@ $('.dropdown_content').hover(function () {
 
 $('.close-btn').click(function (e) {
     e.preventDefault;
-    $('.overlay').css('height','0');
+    $('.overlay').css('height', '0');
     $('.categories-menu').hide();
 });
