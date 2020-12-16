@@ -325,6 +325,12 @@ a {
   position: relative;
 }
 
+@media screen and (max-width: 525px) {
+  .categories-wrapper .aside {
+    width: 30%;
+  }
+}
+
 .categories-wrapper .aside .aside--menu li {
   list-style: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.057);

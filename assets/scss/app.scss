@@ -276,6 +276,9 @@ a {
         width: 25%;
         background: rgb(235, 235, 235);
         position: relative;
+        @media screen and (max-width: 525px){
+            width: 30%;
+        }
 
         .aside--menu {
             li {
