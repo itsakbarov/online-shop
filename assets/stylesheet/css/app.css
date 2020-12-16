@@ -979,6 +979,13 @@ a {
   display: none;
 }
 
+.popular .popular-name {
+  color: #212529;
+  font-size: 1.75rem;
+  line-height: 3;
+  padding: 0 15px;
+}
+
 .popular .item {
   -webkit-transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s;
   transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s;
