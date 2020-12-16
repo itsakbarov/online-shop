@@ -54,7 +54,7 @@ $(document).ready(function () {
             // instead of a settings object
         ]
     });
-     $('.popular-item__wrapper').slick({
+    $('.popular-item__wrapper').slick({
         dots: false,
         infinite: true,
         speed: 500,
@@ -110,13 +110,13 @@ $(document).ready(function () {
 $('.categories-btn__title').click(function () {
     console.log('document is working!!!! ');
     $('.overlay').css('height', '100vh');
-    $('body').css('overflow','hidden')
+    $('body').css('overflow', 'hidden')
     $('.categories-menu').css('height', '450px');
 });
 
 $('.overlay').click(function () {
     $('.overlay').css('height', '0');
-    $('body').css('overflow','visible')
+    $('body').css('overflow', 'visible')
     $('.categories-menu').css('height', '0');
 });
 $('.dropdown_content').hover(function () {
@@ -125,7 +125,7 @@ $('.dropdown_content').hover(function () {
 
 $('.close-btn').click(function (e) {
     e.preventDefault;
-    $('body').css('overflow','visible')
+    $('body').css('overflow', 'visible')
     $('.overlay').css('height', '0');
     $('.categories-menu').hide();
 });

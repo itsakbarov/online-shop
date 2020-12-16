@@ -978,3 +978,46 @@ a {
 .slick-dots {
   display: none;
 }
+
+.popular .item {
+  -webkit-transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s;
+  transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s;
+  background: white;
+  margin: 25px 10px;
+  -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.05);
+}
+
+.popular .item .item__top .item__img {
+  width: 194px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.popular .item .item__bottom {
+  padding: 18px 22px;
+}
+
+.popular .item .item__bottom .tag {
+  color: #696565;
+  text-decoration: underline;
+  margin-bottom: 22px;
+  display: block;
+  font-weight: 100;
+}
+
+.popular .item .item__bottom .item__name {
+  color: #212529;
+  font-weight: 400;
+  font-size: 14px;
+  min-height: 66px;
+  display: block;
+}
+
+.popular .item:hover {
+  -webkit-box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
